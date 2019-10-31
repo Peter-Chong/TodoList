@@ -10,6 +10,7 @@ import UIKit
 import SwipeCellKit
 
 class SwipeTableViewController: UITableViewController, SwipeTableViewCellDelegate {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +40,6 @@ class SwipeTableViewController: UITableViewController, SwipeTableViewCellDelegat
             // handle action by updating model with deletion
             self.updateModel(at: indexPath)
 
-            
-            tableView.reloadData()
         }
 
         // customize the action appearance
